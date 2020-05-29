@@ -30,6 +30,7 @@ class UpSamplingLayer(nn.Module):
         return self.main(ipt)
 
 class Model(nn.Module):
+
     def __init__(self, n_layers=12, channels_interval=24):
         super(Model, self).__init__()
 

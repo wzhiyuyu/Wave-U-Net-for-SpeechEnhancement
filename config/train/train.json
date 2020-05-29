@@ -15,12 +15,12 @@
                 "visualize_audio_limit": 20,
                 "visualize_waveform_limit": 20,
                 "visualize_spectrogram_limit": 20,
-                "sample_length": 16384
+                "sample_length": 16000
             }
         }
     },
     "model": {
-        "module": "model.unet_basic",
+        "module": "model.conv_tas_net",
         "main": "Model",
         "args": {}
     },
@@ -41,7 +41,7 @@
             "dataset": "E:/train_dataset.txt",
             "limit": null,
             "offset": 0,
-            "sample_length": 16384,
+            "sample_length": 16000,
             "mode": "train"
         }
     },
@@ -56,7 +56,7 @@
         }
     },
     "train_dataloader": {
-        "batch_size": 10,
+        "batch_size": 4,
         "num_workers": 4,
         "shuffle": true,
         "pin_memory": true
